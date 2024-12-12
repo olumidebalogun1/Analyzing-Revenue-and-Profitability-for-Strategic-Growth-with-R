@@ -53,11 +53,11 @@ This analysis was powered by a suite of tools and techniques, including:
   
 **🛠️ Data Preparation**:
 - Compiled, formatted, cleaned, and transformed the raw data into a unified and consistent dataset.
--	✅ Addressed missing values, removed duplicates, and handled outliers to improve data reliability.
+-	✅ Addressed missing values, removed duplicates, and **handled outliers to improve data reliability**.
 -	✏️ Corrected spelling errors and adjusted data types to ensure accuracy and consistency.
   
 **🧩 Data Enhancement**:
--  Created calculated variables to support deeper and more meaningful analysis.
+-  Created **calculated variables to support deeper and more meaningful analysis**.
   
 **📊 Exploratory Data Analysis (EDA)**:
 - Conducted detailed exploratory analysis using graphical visualizations and statistical techniques to uncover trends, patterns, and relationships within the data.
@@ -65,7 +65,7 @@ This analysis was powered by a suite of tools and techniques, including:
 **🤖 Advanced Analysis and Modeling**:
 - Leveraged machine learning models and visual plots to identify key drivers of performance and derive actionable insights.
   
-This structured approach enhances 🔍 data clarity and reliability, effectively addressing technical challenges and delivering 🚀 actionable insights to support informed decision-making.
+This structured approach enhances **🔍 data clarity and reliability, effectively addressing technical challenges and delivering 🚀 actionable insights to support informed decision-making**.
 
  ## **📈 The Analysis**
 Each piece of code in this project was designed for a comprehensive analysis of the company's revenue and profitability from 2020 to 2023, leveraging advanced diagnostic, predictive, and prescriptive analytics to uncover trends, address disparities, and identify growth opportunities. Here’s how I approached each task/question:
