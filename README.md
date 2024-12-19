@@ -191,7 +191,7 @@ To identify the strength and direction of relationships between variables while 
 
 🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
 
-![8  Exploratory and Statistical Correlation Analysis with Significance Testing](https://github.com/user-attachments/assets/1f8e0454-4070-4ffb-8564-1fa5d95259bd)
+![8  Exploratory and Statistical Correlation Analysis with Significance Testing](https://github.com/user-attachments/assets/6783a8ce-79a8-452b-9d3e-53465d50ce40)
 ### **Insights**:
 The correlation results suggest that while increasing sales volume and revenue can lead to positive outcomes, the company must also focus on controlling costs, optimizing profit margins, and addressing inefficiencies in pricing and operational expenses.
 
