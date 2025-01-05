@@ -21,30 +21,22 @@ library(readxl)
 library(lubridate)
 
 
-####### Importing datasets  #######
+# ------ Importing datasets  -----
 
-Sales_Transactions <- 
-       read_excel(
-            "C:/Users/DELL/OneDrive - COVENANT UNIVERSITY/Desktop/Sales_Insights/Sales _Transactions.xlsx")
-View(Sales_Transactions)    # Viewing the table
+Sales_Transactions <- read_excel("Revunue Dataset/Sales _Transactions.xlsx")
+View(Sales_Transactions)        # Viewing the table
 
-Sales_Customers <- 
-       read_excel(
-            "C:/Users/DELL/OneDrive - COVENANT UNIVERSITY/Desktop/Sales_Insights/Sales_Customers.xlsx")
-View(Sales_Customers)    # Viewing the table
+Sales_Customers <- read_excel("Revunue Dataset/Sales_Customers.xlsx")
+View(Sales_Customers)        # Viewing the table
 
-Sales_Markets <- 
-       read_excel(
-            "C:/Users/DELL/OneDrive - COVENANT UNIVERSITY/Desktop/Sales_Insights/Sales_Markets.xlsx")
-View(Sales_Markets)     # Viewing the table
+Sales_Markets <- read_excel("Revunue Dataset/Sales_Markets.xlsx")
+View(Sales_Markets)        # Viewing the table
 
-Sales_products <-
-       read_excel(
-            "C:/Users/DELL/OneDrive - COVENANT UNIVERSITY/Desktop/Sales_Insights/Sales_products.xlsx")
-View(Sales_products)     # Viewing the table
+Sales_products <-read_excel("Revunue Dataset/Sales_products.xlsx")
+View(Sales_products)       # Viewing the table
 
 
-#######   Joining the tables  #######
+                    #######  Joining the tables   #######
 
 sales_data <- Sales_Transactions %>%
   left_join(Sales_Customers, by = "customer_code") %>%
@@ -54,8 +46,7 @@ sales_data <- Sales_Transactions %>%
 view(sales_data )       
 
 
-#######   Wrangling   #######
-
+                         #######   Wrangling   #######
 # Checking for Missing Data
 total_missing_values <- sum(is.na(sales_data))
 print(paste("Total missing values in the dataset:", total_missing_values))
@@ -73,7 +64,7 @@ sales_data <- sales_data %>%
 # Checking the structure of the dataset
 str(sales_data)     # Displaying columns, data types, and sample values
 
-# -----  Updating Column Names: Renaming sales_amount to revenue and sales_qty to volume.  -----  
+# -----  Updating Column Names: Renaming sales_amount to revenue and sales_qty to volume   -----  
 # to enhance clarity, consistency, and alignment with business terminology standards. 
 sales_data <- sales_data %>%
   rename(
@@ -85,12 +76,12 @@ sales_data <- sales_data %>%
 head(sales_data)              # View the updated data frame to confirm changes
 
 # -----  Converting order_date to date format and extract year/month.  -----
-sales_data$order_date <- as.Date(sales_data$order_date, format = "%Y-%m-%d")    # Converting order_date to Date format
-sales_data$year <- format(sales_data$order_date, "%Y")     # Extracting Year
-sales_data$month <- format(sales_data$order_date, "%Y-%m")      # Extracting Year and Month
+sales_data$order_date <- as.Date(sales_data$order_date, format = "%Y-%m-%d")      # Converting order_date to Date format
+sales_data$year <- format(sales_data$order_date, "%Y")       # Extracting Year
+sales_data$month <- format(sales_data$order_date, "%Y-%m")        # Extracting Year and Month
 
 # Displaying columns, data types, and sample values
-str(sales_data)    
+str(sales_data)   
 
 # -----  Calculating and displaying the number of rows and columns in sales_data.  ----- 
 # Number of Rows
@@ -104,7 +95,8 @@ print(paste("Number of columns:", num_columns))
 # Combined Information
 print(paste("The Sales_dataset has", num_rows, "rows and",num_columns , "columns."))
 
-#######  Exploratory Data Analysis 1 (EDA) - statistical summary.  ####### 
+
+       #######  Exploratory Data Analysis 1 (EDA) - statistical summary.  ####### 
 
 # -----  Generating a statistical summary for specific columns in sales_data.  -----
 # Columns to Summarize
@@ -116,7 +108,7 @@ sales_data %>%
   summary()
 
 
-#######  Wrangling 2 (Removing Outliers).  #######
+                 #######  Wrangling 2 (Removing Outliers).  #######
 # ------------------------------------------------------------------------------
 # TASK: To Remove Outliers and Summarize the Cleaned Data.
 
@@ -179,7 +171,7 @@ print(paste("After removing outliers, the dataset has", num_rows_cleaned, "rows.
 print(paste("The number of rows removed from the dataset is", rows_removed, "."))
 
 
-#######  Exploratory Data Analysis 2 (EDA). ####### 
+                  #######  Exploratory Data Analysis 2 (EDA). ####### 
 
 # Generating a statistical summary for specific columns in clearned_sales_data (csd).
 # Columns to Summarize
@@ -236,9 +228,9 @@ Annual_Summary <- Annual_Summary %>%
 Plot_Annual_Summary <- Annual_Summary %>% 
   gt() %>% 
   tab_header(title = "Annual Performance: Revenue ($ Million), Profit ($ Million), 
-             and Volume ($ Thousand) with Percentage Growth") %>%        # Adding descriptive title to the table
+             and Volume (Thousand) with Percentage Growth") %>%          # Adding descriptive title to the table
   cols_align(align = "left")                                             # Aligning all columns to the left for better readability
-Plot_Annual_Summary      # Displaying the basic visualization table
+Plot_Annual_Summary          # Displaying the basic visualization table
 
 # ------  Highlighting Key Data Points with Conditional Formatting  ------
 # Enhancing the table visualization by applying themes and highlighting important data points
@@ -250,7 +242,7 @@ plot_annual_performance <- Plot_Annual_Summary %>%
   gt_highlight_rows(column = Pct_diff_Profit, fill="lightblue") %>%         # Highlighting cells in "Profit Growth %" column with light blue
   gt_highlight_rows(rows = Pct_diff_Revenue < 0, fill="steelblue")          # Highlighting rows where revenue growth is negative with steel blue
 
-plot_annual_performance    # Displaying the final formatted table with conditional formatting 
+plot_annual_performance        # Displaying the final formatted table with conditional formatting 
 
 
 #######  2. Analyzing Top 20 Performers by Customer Type, Product Type, and Market Zone: Revenue and Profitability Analysis.  ######
@@ -283,12 +275,12 @@ revenue_top_20 <- summarized_sales_1 %>%
 # Creating table visualization for the top 20 performers by Total Revenue
 plot_revenue <- revenue_top_20 %>% 
   gt() %>% 
-  tab_header(title = "Top Twenty (20) by Total Revenue ($ Million)") %>%      # Adding  title to the table
+  tab_header(title = "Top Twenty (20) by Total Revenue ($ Million)") %>%         # Adding  title to the table
   cols_align(align = "left")     # Aligning all columns to the left for better readability
 
 # ------  Highlighting Key Data Points with Conditional Formatting  ------
 # Applying custom theme and highlight specific rows and columns with colors for better emphasis
-revenue_domain <- range(summarized_sales_1$Total_Revenue_in_M)      # Extract the observed range for Total_Revenue_in_M from summarized_sales_1
+revenue_domain <- range(summarized_sales_1$Total_Revenue_in_M)          # Extract the observed range for Total_Revenue_in_M from summarized_sales_1
 
 plot_revenue <- plot_revenue %>% 
   gt_theme_pff() %>%          # Applying pre-defined professional theme to the table
@@ -296,7 +288,7 @@ plot_revenue <- plot_revenue %>%
   gt_color_rows(columns = "Total_Revenue_in_M", palette = "Pastel1",             # Adding pastel color gradient to the "Total Revenue" column for better visual impact
                 domain = revenue_domain               # Specify domain for consistent color scaling
   )
-plot_revenue       # Displaying the final formatted table with conditional formatting
+plot_revenue        # Displaying the final formatted table with conditional formatting
 
 
 #######   3. Analyzing Top 20 Performers by Customer Type, Product Type, and Market Zone: Profit and Revenue Insights.  #######
@@ -1077,35 +1069,35 @@ revenue_clustering <- cleaned_sales_data %>%
   arrange(desc(Total_Revenue_in_M)) %>% 
   mutate(Average_Volume_Value = round(Total_Revenue_in_M/Total_Volume_in_K, 2)) %>% 
   mutate(Total_Revenue_percent = round(Total_Revenue_in_M *100/sum(Total_Revenue_in_M), 2)) %>% 
-  mutate(Cum_percernt = round(cumsum(Total_Revenue_percent), 2)) %>% 
+  mutate(Cum_percent = round(cumsum(Total_Revenue_percent), 2)) %>% 
   select(custmer_name , Total_Revenue_in_M, Total_Volume_in_K , 
-         Average_Volume_Value , Total_Revenue_percent, Cum_percernt) %>% 
+         Average_Volume_Value , Total_Revenue_percent, Cum_percent) %>% 
   arrange(desc(Total_Revenue_in_M))
 
 view(revenue_clustering)
 
+# ------ Creating a Table for Customers Who Make Up 80% of Total Revenue ------
+# Filtering the customers contributing up to 80% of total revenue.
+top_80_customers <- revenue_clustering %>%
+  filter(Cum_percent <= 80)
+
+view(top_80_customers)        # Display the top 80% customers data
 
 # ------  Creating a Table for Customers Who Make Up 80% of Total Revenue. -------
 # Identifying Top Customers Contributing 80% of Revenue
-# This block extracts the top customers based on total revenue and visualizes the data.
-Top_Revenue_customer <- revenue_clustering %>%
-  slice_max(Total_Revenue_in_M, n = 15)  # Selecting top 15 customers contributing to revenue
-view(Top_Revenue_customer)  # Viewing the resulting subset
-
 # Plotting a Table for Top Customers 
-plot <- Top_Revenue_customer %>% 
-  select(custmer_name, Total_Revenue_in_M, Total_Volume_in_K,Total_Revenue_percent, Cum_percernt ) %>% 
+plot <- top_80_customers  %>% 
+  select(custmer_name, Total_Revenue_in_M, Total_Volume_in_K,Total_Revenue_percent, Cum_percent ) %>% 
   gt() %>% 
-  tab_header(title = "Top Customers Who Make Up 80% of Total Revenue") %>% 
+  tab_header(title = "Top Customers Who Make Up 80% of Total Revenue ($ Million)") %>% 
   cols_align(align = "left")
 
 # Enhancing Table with Styling
 plot <- plot %>% 
   gt_theme_pff() %>% 
-  gt_highlight_rows(rows = Total_Revenue_in_M >=4.00, fill="lightpink" ) %>% 
-  gt_highlight_rows(rows = Total_Volume_in_K >=15.00, fill="lightblue" ) %>% 
-  gt_plt_bar_pct(Total_Revenue_percent, fill = "steelblue",height = 15, width = 100) %>% 
-  gt_color_rows(columns = "Total_Volume_in_K", palette = "Pastel1")
+  gt_highlight_rows(rows = Total_Revenue_in_M >=5.00, fill="lightpink" ) %>% 
+  gt_highlight_rows(rows = Total_Revenue_in_M >=3.00 & Total_Revenue_in_M <=5.00 , fill="lightblue" ) %>% 
+  gt_plt_bar_pct(Total_Revenue_percent, fill = "steelblue",height = 15, width = 100)
 
 plot    # Displaying the styled table
 
@@ -1149,5 +1141,3 @@ plot(
 # 1. K-Means clustering identifies patterns in customer data, grouping customers with similar revenue and volume characteristics.
 # 2. This visualization helps in interpreting customer behavior and identifying high-value clusters.
 # 3. The number of clusters (`centers = 3`) can be adjusted based on business requirements or results of Elbow Method analysis.
-
-#############################################################################################################################################

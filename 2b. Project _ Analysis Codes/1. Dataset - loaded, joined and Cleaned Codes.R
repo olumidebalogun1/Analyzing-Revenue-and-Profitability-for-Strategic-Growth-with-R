@@ -21,30 +21,22 @@ library(readxl)
 library(lubridate)
 
 
-####### Importing datasets  #######
+                          # ------ Importing datasets  -----
 
-Sales_Transactions <- 
-  read_excel(
-    "C:/Users/DELL/OneDrive - COVENANT UNIVERSITY/Desktop/Sales_Insights/Sales _Transactions.xlsx")
-View(Sales_Transactions)    # Viewing the table
+Sales_Transactions <- read_excel("Revunue Dataset/Sales _Transactions.xlsx")
+View(Sales_Transactions)        # Viewing the table
 
-Sales_Customers <- 
-  read_excel(
-    "C:/Users/DELL/OneDrive - COVENANT UNIVERSITY/Desktop/Sales_Insights/Sales_Customers.xlsx")
-View(Sales_Customers)    # Viewing the table
+Sales_Customers <- read_excel("Revunue Dataset/Sales_Customers.xlsx")
+View(Sales_Customers)        # Viewing the table
 
-Sales_Markets <- 
-  read_excel(
-    "C:/Users/DELL/OneDrive - COVENANT UNIVERSITY/Desktop/Sales_Insights/Sales_Markets.xlsx")
-View(Sales_Markets)     # Viewing the table
+Sales_Markets <- read_excel("Revunue Dataset/Sales_Markets.xlsx")
+View(Sales_Markets)        # Viewing the table
 
-Sales_products <-
-  read_excel(
-    "C:/Users/DELL/OneDrive - COVENANT UNIVERSITY/Desktop/Sales_Insights/Sales_products.xlsx")
-View(Sales_products)     # Viewing the table
+Sales_products <-read_excel("Revunue Dataset/Sales_products.xlsx")
+View(Sales_products)       # Viewing the table
 
 
-#######   Joining the tables  #######
+                     #######  Joining the tables   #######
 
 sales_data <- Sales_Transactions %>%
   left_join(Sales_Customers, by = "customer_code") %>%
@@ -54,8 +46,7 @@ sales_data <- Sales_Transactions %>%
 view(sales_data )       
 
 
-#######   Wrangling   #######
-
+                               #######   Wrangling   #######
 # Checking for Missing Data
 total_missing_values <- sum(is.na(sales_data))
 print(paste("Total missing values in the dataset:", total_missing_values))
@@ -73,7 +64,7 @@ sales_data <- sales_data %>%
 # Checking the structure of the dataset
 str(sales_data)     # Displaying columns, data types, and sample values
 
-# -----  Updating Column Names: Renaming sales_amount to revenue and sales_qty to volume.  -----  
+# -----  Updating Column Names: Renaming sales_amount to revenue and sales_qty to volume   -----  
 # to enhance clarity, consistency, and alignment with business terminology standards. 
 sales_data <- sales_data %>%
   rename(
@@ -85,12 +76,12 @@ sales_data <- sales_data %>%
 head(sales_data)              # View the updated data frame to confirm changes
 
 # -----  Converting order_date to date format and extract year/month.  -----
-sales_data$order_date <- as.Date(sales_data$order_date, format = "%Y-%m-%d")    # Converting order_date to Date format
-sales_data$year <- format(sales_data$order_date, "%Y")     # Extracting Year
-sales_data$month <- format(sales_data$order_date, "%Y-%m")      # Extracting Year and Month
+sales_data$order_date <- as.Date(sales_data$order_date, format = "%Y-%m-%d")      # Converting order_date to Date format
+sales_data$year <- format(sales_data$order_date, "%Y")       # Extracting Year
+sales_data$month <- format(sales_data$order_date, "%Y-%m")        # Extracting Year and Month
 
 # Displaying columns, data types, and sample values
-str(sales_data)    
+str(sales_data)   
 
 # -----  Calculating and displaying the number of rows and columns in sales_data.  ----- 
 # Number of Rows
@@ -104,7 +95,8 @@ print(paste("Number of columns:", num_columns))
 # Combined Information
 print(paste("The Sales_dataset has", num_rows, "rows and",num_columns , "columns."))
 
-#######  Exploratory Data Analysis 1 (EDA) - statistical summary.  ####### 
+
+           #######  Exploratory Data Analysis 1 (EDA) - statistical summary.  ####### 
 
 # -----  Generating a statistical summary for specific columns in sales_data.  -----
 # Columns to Summarize
@@ -116,7 +108,7 @@ sales_data %>%
   summary()
 
 
-#######  Wrangling 2 (Removing Outliers).  #######
+                    #######  Wrangling 2 (Removing Outliers).  #######
 # ------------------------------------------------------------------------------
 # TASK: To Remove Outliers and Summarize the Cleaned Data.
 
@@ -179,7 +171,7 @@ print(paste("After removing outliers, the dataset has", num_rows_cleaned, "rows.
 print(paste("The number of rows removed from the dataset is", rows_removed, "."))
 
 
-#######  Exploratory Data Analysis 2 (EDA). ####### 
+                  #######  Exploratory Data Analysis 2 (EDA). ####### 
 
 # Generating a statistical summary for specific columns in clearned_sales_data (csd).
 # Columns to Summarize

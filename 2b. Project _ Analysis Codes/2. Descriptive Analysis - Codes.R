@@ -1,5 +1,5 @@
 # ---- Note ----
-# This is an Integrated (interdependent) code/script.
+# This is an Integrated (interdependent) code.
 # The code is designed to function in coordination with other
 # components, modules, or systems to fulfill its specified purpose.
 # It relies on external elements, such as libraries, databases,
@@ -7,7 +7,7 @@
 
 # ---------------------------------------------------------------------------------------------
 
-#######  DESCRIPTIVE ANALYSIS  #######
+                          #######  DESCRIPTIVE ANALYSIS  #######
 
 #######   1 Annual Revenue, Profit, and Volume Performance with Percentage Growth.   #######
 
@@ -50,9 +50,9 @@ Annual_Summary <- Annual_Summary %>%
 Plot_Annual_Summary <- Annual_Summary %>% 
   gt() %>% 
   tab_header(title = "Annual Performance: Revenue ($ Million), Profit ($ Million), 
-             and Volume ($ Thousand) with Percentage Growth") %>%        # Adding descriptive title to the table
+             and Volume (Thousand) with Percentage Growth") %>%          # Adding descriptive title to the table
   cols_align(align = "left")                                             # Aligning all columns to the left for better readability
-Plot_Annual_Summary      # Displaying the basic visualization table
+Plot_Annual_Summary          # Displaying the basic visualization table
 
 # ------  Highlighting Key Data Points with Conditional Formatting  ------
 # Enhancing the table visualization by applying themes and highlighting important data points
@@ -64,7 +64,7 @@ plot_annual_performance <- Plot_Annual_Summary %>%
   gt_highlight_rows(column = Pct_diff_Profit, fill="lightblue") %>%         # Highlighting cells in "Profit Growth %" column with light blue
   gt_highlight_rows(rows = Pct_diff_Revenue < 0, fill="steelblue")          # Highlighting rows where revenue growth is negative with steel blue
 
-plot_annual_performance    # Displaying the final formatted table with conditional formatting 
+plot_annual_performance        # Displaying the final formatted table with conditional formatting 
 
 
 #######  2. Analyzing Top 20 Performers by Customer Type, Product Type, and Market Zone: Revenue and Profitability Analysis.  ######
@@ -97,12 +97,12 @@ revenue_top_20 <- summarized_sales_1 %>%
 # Creating table visualization for the top 20 performers by Total Revenue
 plot_revenue <- revenue_top_20 %>% 
   gt() %>% 
-  tab_header(title = "Top Twenty (20) by Total Revenue ($ Million)") %>%      # Adding  title to the table
+  tab_header(title = "Top Twenty (20) by Total Revenue ($ Million)") %>%         # Adding  title to the table
   cols_align(align = "left")     # Aligning all columns to the left for better readability
 
 # ------  Highlighting Key Data Points with Conditional Formatting  ------
 # Applying custom theme and highlight specific rows and columns with colors for better emphasis
-revenue_domain <- range(summarized_sales_1$Total_Revenue_in_M)      # Extract the observed range for Total_Revenue_in_M from summarized_sales_1
+revenue_domain <- range(summarized_sales_1$Total_Revenue_in_M)          # Extract the observed range for Total_Revenue_in_M from summarized_sales_1
 
 plot_revenue <- plot_revenue %>% 
   gt_theme_pff() %>%          # Applying pre-defined professional theme to the table
@@ -110,7 +110,7 @@ plot_revenue <- plot_revenue %>%
   gt_color_rows(columns = "Total_Revenue_in_M", palette = "Pastel1",             # Adding pastel color gradient to the "Total Revenue" column for better visual impact
                 domain = revenue_domain               # Specify domain for consistent color scaling
   )
-plot_revenue       # Displaying the final formatted table with conditional formatting
+plot_revenue        # Displaying the final formatted table with conditional formatting
 
 
 #######   3. Analyzing Top 20 Performers by Customer Type, Product Type, and Market Zone: Profit and Revenue Insights.  #######

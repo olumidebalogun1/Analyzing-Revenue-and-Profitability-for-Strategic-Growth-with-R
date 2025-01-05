@@ -1,5 +1,5 @@
 # ---- Note ----
-# This is an Integrated (interdependent) code/script.
+# This is an Integrated (interdependent) code.
 # The code is designed to function in coordination with other
 # components, modules, or systems to fulfill its specified purpose.
 # It relies on external elements, such as libraries, databases,
@@ -7,7 +7,7 @@
 
 #--------------------------------------------------------------------------
 
-#######  PRESCRIPTIVE ANALYSIS  #######
+                        #######  PRESCRIPTIVE ANALYSIS  #######
 
 
 #####  19.  Top Customers Who Make Up 80% of Total Revenue.  #####
@@ -31,35 +31,35 @@ revenue_clustering <- cleaned_sales_data %>%
   arrange(desc(Total_Revenue_in_M)) %>% 
   mutate(Average_Volume_Value = round(Total_Revenue_in_M/Total_Volume_in_K, 2)) %>% 
   mutate(Total_Revenue_percent = round(Total_Revenue_in_M *100/sum(Total_Revenue_in_M), 2)) %>% 
-  mutate(Cum_percernt = round(cumsum(Total_Revenue_percent), 2)) %>% 
+  mutate(Cum_percent = round(cumsum(Total_Revenue_percent), 2)) %>% 
   select(custmer_name , Total_Revenue_in_M, Total_Volume_in_K , 
-         Average_Volume_Value , Total_Revenue_percent, Cum_percernt) %>% 
+         Average_Volume_Value , Total_Revenue_percent, Cum_percent) %>% 
   arrange(desc(Total_Revenue_in_M))
 
 view(revenue_clustering)
 
+# ------ Creating a Table for Customers Who Make Up 80% of Total Revenue ------
+# Filtering the customers contributing up to 80% of total revenue.
+top_80_customers <- revenue_clustering %>%
+  filter(Cum_percent <= 80)
+
+view(top_80_customers)        # Display the top 80% customers data
 
 # ------  Creating a Table for Customers Who Make Up 80% of Total Revenue. -------
 # Identifying Top Customers Contributing 80% of Revenue
-# This block extracts the top customers based on total revenue and visualizes the data.
-Top_Revenue_customer <- revenue_clustering %>%
-  slice_max(Total_Revenue_in_M, n = 15)  # Selecting top 15 customers contributing to revenue
-view(Top_Revenue_customer)  # Viewing the resulting subset
-print(Top_Revenue_customer)
 # Plotting a Table for Top Customers 
-plot <- Top_Revenue_customer %>% 
-  select(custmer_name, Total_Revenue_in_M, Total_Volume_in_K,Total_Revenue_percent, Cum_percernt ) %>% 
+plot <- top_80_customers  %>% 
+  select(custmer_name, Total_Revenue_in_M, Total_Volume_in_K,Total_Revenue_percent, Cum_percent ) %>% 
   gt() %>% 
-  tab_header(title = "Top Customers Who Make Up 80% of Total Revenue") %>% 
+  tab_header(title = "Top Customers Who Make Up 80% of Total Revenue ($ Million)") %>% 
   cols_align(align = "left")
 
 # Enhancing Table with Styling
 plot <- plot %>% 
   gt_theme_pff() %>% 
-  gt_highlight_rows(rows = Total_Revenue_in_M >=4.00, fill="lightpink" ) %>% 
-  gt_highlight_rows(rows = Total_Volume_in_K >=15.00, fill="lightblue" ) %>% 
-  gt_plt_bar_pct(Total_Revenue_percent, fill = "steelblue",height = 15, width = 100) %>% 
-  gt_color_rows(columns = "Total_Volume_in_K", palette = "Pastel1")
+  gt_highlight_rows(rows = Total_Revenue_in_M >=5.00, fill="lightpink" ) %>% 
+  gt_highlight_rows(rows = Total_Revenue_in_M >=3.00 & Total_Revenue_in_M <=5.00 , fill="lightblue" ) %>% 
+  gt_plt_bar_pct(Total_Revenue_percent, fill = "steelblue",height = 15, width = 100)
 
 plot    # Displaying the styled table
 

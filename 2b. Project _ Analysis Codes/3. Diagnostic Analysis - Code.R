@@ -1,5 +1,5 @@
 # ---- Note ----
-# This is an Integrated (interdependent) code/script.
+# This is an Integrated (interdependent) code.
 # The code is designed to function in coordination with other
 # components, modules, or systems to fulfill its specified purpose.
 # It relies on external elements, such as libraries, databases,
@@ -7,7 +7,7 @@
 
 # ---------------------------------------------------------------------------------
 
-#######  DIAGNOSTIC ANALYSIS  #######
+                        #######  DIAGNOSTIC ANALYSIS  #######
 
 #######  8. Exploratory and Statistical Correlation Analysis with Significance Testing.  #######
 
@@ -284,4 +284,3 @@ cost_volume_correlation <- cor(cleaned_sales_data$cost_price,
                                cleaned_sales_data$volume, 
                                method = "spearman") 
 cost_volume_correlation        # Displaying the correlation result
-
