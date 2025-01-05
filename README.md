@@ -77,7 +77,7 @@ Each piece of code in this project was designed for a comprehensive analysis of 
 **Purpose**: 
 To identify trends over time and detect periods of underperformance or stagnation, as well as to assess whether variations in key metrics(e.g., revenue, profit, Volume ) are statistically or practically significant. This helps pinpoint problem areas that  may require further investigation or corrective action.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/2.%20Descriptive%20Analysis%20-%20Codes.R)
 
 ![1  Analyzing Annual Performance with Revenue, Profit, and Vol](https://github.com/user-attachments/assets/87f930b5-4074-4040-b786-60433655cbe8)
 ### **Insights**:
@@ -93,7 +93,7 @@ To identify trends over time and detect periods of underperformance or stagnatio
 **Purpose**: 
 To identify the highest-performing customer type, product type, and market zones based on total revenue, enabling businesses to prioritize resources and optimize strategies for growth. This analysis helps uncover key success factors and target areas for expansion.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/2.%20Descriptive%20Analysis%20-%20Codes.R)
 
 ![2   Analyzing Top 20 Performers by Customer Type, Product Type, and Market Zone -  Revenue and Profitability Analysis](https://github.com/user-attachments/assets/00b441df-8a7d-4d98-baf9-52096cab6a64)
 ### **Insights**:
@@ -107,7 +107,7 @@ To identify the highest-performing customer type, product type, and market zones
 **Purpose**: 
 To To identify profitable , customer types, product types, and market zones that drive significant profit, beyond just sales volume. This analysis helps optimize resource allocation and evaluate the relationship between sales and profitability for sustainable growth.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/2.%20Descriptive%20Analysis%20-%20Codes.R)
 
 ![3   Analyzing Top 20 Performers by Customer Type, Product Type, and Market Zone -  Profit and Revenue Insights](https://github.com/user-attachments/assets/e98b8913-343b-42aa-822c-50b52217a660)
 ### **Insights**:
@@ -121,7 +121,7 @@ To To identify profitable , customer types, product types, and market zones that
 **Purpose**: 
 To identify key metrics (revenue) over time to identify long-term trends, assess whether performance is improving or declining, and understand business growth sustainability. This insight helps spot early signs of decline and guide strategic decisions to optimize performance.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/2.%20Descriptive%20Analysis%20-%20Codes.R)
 
 ![4   Trend Analysis of Revenue Performance Over Time](https://github.com/user-attachments/assets/00797c33-6834-4560-aef6-9d50af6af3d6)
 ### **Insights**:
@@ -133,14 +133,13 @@ To identify key metrics (revenue) over time to identify long-term trends, assess
 -	**Recovery in 2023**: Notable improvements started in March, with the strongest growth from March (1.26) to May (1.82), driven by effective strategic adjustments
 
 
-
 ### **5. Market Zone Performance Analysis**
 ![image](https://github.com/user-attachments/assets/de4b9dc9-3f96-4a9d-a6b4-46343b9189cf)
 
 **Purpose**: 
 To compare revenue and profitability across market zones, identifying high-performing and underperforming zones. These insights support the optimization of resource allocation, marketing strategies, and sales efforts, ultimately driving business growth and enhancing overall profitability.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/2.%20Descriptive%20Analysis%20-%20Codes.R)
 
 ![5   Market Zone Performance Analysis](https://github.com/user-attachments/assets/23073df4-a22b-4220-9883-3f67546b9ee4)
 ### **Hypothesis**:                                                                                                                               
@@ -156,7 +155,7 @@ Significant differences in revenue and profitability across market zones highlig
 **Purpose**: 
 Is to identify which product types are most profitable and which are underperforming. This insight helps businesses optimize resources, marketing strategies, and inventory management to drive growth and reduce costs.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/2.%20Descriptive%20Analysis%20-%20Codes.R)
 
 ![6   Revenue and Profitability Analysis by Product Type](https://github.com/user-attachments/assets/c461402a-8d28-4858-9034-e2f031f20bc5)
 ### **Hypothesis**:                                                                                                                      
@@ -172,7 +171,7 @@ In contrast, **"Wholesale Goods" reports the lowest revenue at $4.93M. However, 
 **Purpose**: 
 To uncover the revenue and profit contributions of different customer types to inform resource allocation, optimize marketing strategies, and drive targeted initiatives for customer retention and revenue growth.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/2.%20Descriptive%20Analysis%20-%20Codes.R)
 
 ![7   Revenue and Profitability Analysis by Customer Types](https://github.com/user-attachments/assets/1ab7a36e-60c1-48b1-a3d0-cadf8e5f57bd)
 ### **Hypothesis**: 
@@ -189,7 +188,7 @@ The significant differences in revenue and profitability across customer types h
 **Purpose**: 
 To identify the strength and direction of relationships between variables while incorporating statistical rigor through significance testing and confidence intervals for more reliable interpretations.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/3.%20Diagnostic%20Analysis%20-%20Code.R)
 
 ![8  Exploratory and Statistical Correlation Analysis with Significance Testing](https://github.com/user-attachments/assets/6783a8ce-79a8-452b-9d3e-53465d50ce40)
 ### **Insights**:
@@ -202,7 +201,7 @@ The correlation results suggest that while increasing sales volume and revenue c
 **Purpose**: 
 Is to explore the relationship between Volume and revenue, aiming to identify key revenue drivers, optimize pricing and sales strategies, improve forecasting accuracy, analyze segment contributions, and support data-driven decision-making to maximize revenue generation.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/3.%20Diagnostic%20Analysis%20-%20Code.R)
 
 ![9   The Impact of Volume on Revenue](https://github.com/user-attachments/assets/cc873d9b-9316-4e26-a601-5017fdab4439)
 ### **Hypothesis**: 
@@ -219,7 +218,7 @@ To drive revenue growth, the company should focus on increasing sales volume thr
 **Purpose**: 
 Is to examine the correlation between the volume of products sold and the profit generated. This analysis aims to uncover key drivers of profitability, enhance business strategies, and support informed decision-making.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/3.%20Diagnostic%20Analysis%20-%20Code.R)
 
 ![10  The Impact of Volume on Profitability](https://github.com/user-attachments/assets/1e305e90-5f06-44a7-8d72-7d47247732b3)
 ### **Hypothesis**: 
@@ -236,7 +235,7 @@ To boost profitability, the company should focus on increasing sales volume whil
 **Purpose**: 
 Is to explore the relationship between revenue and profitability, helping to identify profit drivers, optimize business strategies, enhance financial efficiency, and support data-driven decision-making for prioritizing profitable revenue streams.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/3.%20Diagnostic%20Analysis%20-%20Code.R)
 
 ![11   Revenue and Profitability -  Analyzing the Correlation](https://github.com/user-attachments/assets/f1d30c26-a92e-4cc1-aa7a-4788f8c45c92)
 ### **Hypothesis**: 
@@ -253,7 +252,7 @@ Growing revenue directly boosts profitability. Therefore, strategies to increase
 **Purpose**: 
 Is to understand how the cost of production or acquiring a product impacts revenue generation. This analysis helps identify cost-related revenue drivers, optimize pricing strategies, improve forecasting, enhance business efficiency by addressing cost inefficiencies, and support data-driven decisions for better pricing and revenue optimization.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/3.%20Diagnostic%20Analysis%20-%20Code.R)
 
 ![12  The Impact of Cost Price on Revenue](https://github.com/user-attachments/assets/d21e72cd-ef61-4103-bd06-3c8cd5af2ef3)
 ### **Hypothesis**: 
@@ -270,7 +269,7 @@ Managing costs is crucial to protect profit margins. The company should control 
 **Purpose**: 
 Is to investigate how the cost of producing or acquiring a product impacts the overall profitability of a business. This analysis ultimately supports strategic decision-making to ensure that businesses optimize costs and maximize profitability.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/3.%20Diagnostic%20Analysis%20-%20Code.R)
 
 ![13  The Impact of Cost Price on Profitability](https://github.com/user-attachments/assets/d500899d-2e5b-403d-ba13-6252d5be9827)
 ### **Hypothesis**: 
@@ -287,7 +286,7 @@ Effective cost management is crucial for maintaining profitability. The company 
 **Purpose**: 
 Is to evaluate the relationship between cost price and sales volume, identify pricing sensitivity, and uncover insights that can guide pricing strategies, optimize production costs, and predict how variations in cost price impact customer demand and sales performance.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/3.%20Diagnostic%20Analysis%20-%20Code.R)
 
 ![14  The Impact of Cost Price on Volume](https://github.com/user-attachments/assets/e2088648-3102-435a-bf4c-5509bd07eb7d)
 ### **Hypothesis**: 
@@ -304,7 +303,7 @@ Leveraging economies of scale can lower unit costs and enhance profitability as 
 **Purpose**: 
 Is to identify the factors that significantly impact revenue outcomes, enabling businesses to optimize strategies and make informed decisions to enhance sales effectiveness.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/4.%20Predictive%20Analysis%20-%20Code.R)
 
 ![15  Feature Importance Plot with XGBoost Model](https://github.com/user-attachments/assets/a395f287-317c-4d0c-beaf-35f35a321c8b)
 ### **Insights**:
@@ -318,7 +317,7 @@ Is to identify the factors that significantly impact revenue outcomes, enabling 
 **Purpose**: 
 To  uncover recurring seasonal patterns and identify long-term growth or decline trends in revenue, enabling better forecasting, resource allocation, and strategic decision-making for sustained business performance.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/4.%20Predictive%20Analysis%20-%20Code.R)
 
 ![16  Revenue Seasonality and Trend Analysis - Using Decomposition](https://github.com/user-attachments/assets/6c5be2f3-eb1d-4f7c-a846-5313591aeb31)
 ### **Insights**:
@@ -334,7 +333,7 @@ Understanding these components can help the company plan better for peak seasons
 **Purpose**: 
 To leverage these predictions in decision-making that optimizes business strategies, such as pricing, marketing, and resource allocation, to achieve positive financial outcomes.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/4.%20Predictive%20Analysis%20-%20Code.R)
 
 ![17  Forecasting Revenue Trends with Time Series Analysis](https://github.com/user-attachments/assets/2dc6469d-6801-405b-beed-76c42eef0d5f)
 ### **Insights**:
@@ -351,7 +350,7 @@ To achieve higher growth, the company should diversify offerings, target new cus
 **Purpose**: 
 Is to uncover how selling price and cost price influence profit margins, optimize pricing strategies, support data-driven decisions, identify segment-specific patterns, forecast financial outcomes, and detect inefficiencies to improve profitability and guide strategic planning.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/4.%20Predictive%20Analysis%20-%20Code.R)
 
 ![18  Pricing Analysis](https://github.com/user-attachments/assets/1e16f589-cc4a-4e56-adcf-bbaff3dba6ec)
 ### **Insights**:
@@ -369,7 +368,7 @@ Is to uncover how selling price and cost price influence profit margins, optimiz
 **Purpose**: 
 To identify key customers who contribute significantly to total revenue, enabling businesses to prioritize engagement, optimize marketing, allocate resources efficiently, and make data-driven decisions to retain and grow these high-value customers, ultimately maximizing revenue and fostering long-term success.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/5.%20Prescriptive%20Analysis%20-%20Code.R)
 
 ![19   Top Customers Who Make Up 80% of Total Revenue](https://github.com/user-attachments/assets/f8ba92a6-5b5c-43b9-837e-cbefc0bca24b)
 ### **Insights**:
@@ -385,7 +384,7 @@ Customers outside this top 80% may represent lower-priority opportunities for gr
 **Purpose**: 
 To identify customer segments generating the highest revenue and sales volume, uncovering trends to guide strategic decisions. Insights help optimize resources, target marketing, and tailor engagement strategies for profitability and growth.
 
-🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/tree/main/2a.%20Project_code)
+🔍 For the R Codes to this task/question, Check them out here: [Project_code](https://github.com/olumidebalogun1/Analyzing-Revenue-and-Profitability-for-Strategic-Growth-with-R/blob/main/2b.%20Project%20_%20Analysis%20Codes/5.%20Prescriptive%20Analysis%20-%20Code.R)
 
 ![20  Clustering and Customer Segmentation  ](https://github.com/user-attachments/assets/94abbd70-6e29-4b60-a02a-2d4b11a31229)
 ### **Insights**:
@@ -436,6 +435,6 @@ Feel free to explore, share, and connect! Let's transform data into decisions th
 ### **🌟 Connect with Me**
 - **📞 +234-8065060691**
 - **📧 Email: Olumide Balogun**
-- **🔗 LinkedIn**: [Welcome](https://www.linkedin.com/in/olumide-balogun1/)
-- **🔗 Medium**: [Love You!](https://medium.com/@Olumide-Balogun)
+- **🔗 LinkedIn**: [Connect with me on LinkedIn](https://www.linkedin.com/in/olumide-balogun1/)
+- **🔗 Medium**: [Check out my Medium articles/storytelling](https://medium.com/@Olumide-Balogun)
   
