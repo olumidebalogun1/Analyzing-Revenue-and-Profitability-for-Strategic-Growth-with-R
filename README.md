@@ -372,9 +372,9 @@ To identify key customers who contribute significantly to total revenue, enablin
 
 ![19   Top Customers Who Make Up 80% of Total Revenue](https://github.com/user-attachments/assets/f8ba92a6-5b5c-43b9-837e-cbefc0bca24b)
 ### **Insights**:
-Starting with the highest revenue contributors and summing their contributions, the top fifteen (15) customers out of thirty-eight (38) account for approximately 80% of the total revenue.
+Starting with the highest revenue contributors and summing their contributions, the top fourteen (14) customers out of thirty-eight (38) account for approximately 80% of the total revenue.
 ### **Business Actionable Insight**: 
-These fifteen customers are the primary revenue drivers for the business. Focusing on these key customers through targeted customer relationship management, personalized marketing strategies, and optimized service delivery can enhance loyalty and foster further revenue growth.
+These fourteen (14) customers are the primary revenue drivers for the business. Focusing on these key customers through targeted customer relationship management, personalized marketing strategies, and optimized service delivery can enhance loyalty and foster further revenue growth.
 Customers outside this top 80% may represent lower-priority opportunities for growth or could benefit from alternative strategies aimed at increasing their contributions, such as promotions, upselling, or outreach campaigns to boost engagement and spending.
 
 
@@ -436,5 +436,5 @@ Feel free to explore, share, and connect! Let's transform data into decisions th
 - **📞 +234-8065060691**
 - **📧 Email: Olumide Balogun**
 - **🔗 LinkedIn**: [Connect with me on LinkedIn](https://www.linkedin.com/in/olumide-balogun1/)
-- **🔗 Medium**: [Check out my Medium articles/storytelling](https://medium.com/@Olumide-Balogun)
+- **🔗 Medium**: [Explore my Data Storytelling articles](https://medium.com/@Olumide-Balogun)
   
