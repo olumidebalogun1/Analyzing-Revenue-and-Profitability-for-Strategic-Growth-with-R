@@ -434,7 +434,7 @@ This repository is a testament to the impact of combining data analytics with bu
 Feel free to explore, share, and connect! Let's transform data into decisions that drive measurable impact.
 ### **🌟 Connect with Me**
 - **📞 +234-8065060691**
-- **📧 Email: Olumide Balogun**
+- **📧 Email: krisbalo11@gmail.com**
 - **🔗 LinkedIn**: [Connect with me on LinkedIn](https://www.linkedin.com/in/olumide-balogun1/)
 - **🔗 Medium**: [Explore my Data Storytelling articles](https://medium.com/@Olumide-Balogun)
   
